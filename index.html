@@ -15,42 +15,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <style>
-        .bg-container{
-            background-color:#86d2f2 ;
-            height: 100vh;
-        }
-        .main-heading{
-            font-family: Roboto;
-            font-size: 45px;
-            font-weight: 800;
-            text-align: center;
-            color: #1f1d41;
-        }
-        .custom-btn{
-            height: 45px;
-            width: 120px;
-            text-align: center;
-            border-radius: 5px;
-            background-color:#1f1d41 ;
-            color: white;
-        }
-        .bg-color-card{
-            height: 60vh;
-            width: 20vw;
-            background-color: #1f1d41;
-            border-radius:70px ;
-            text-align: center;
-        }
-        .color-card{
-            height: 70px;
-            width:70px;
-            background-color: #4b5069;
-            border-radius: 100px;
-            margin-bottom: 10px;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="trafficlights.css">
 </head>
 <body>
     <div class="bg-container pt-5">
@@ -68,22 +33,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function stop(){
-            document.getElementById("card1").style.backgroundColor='#cf1124';
-            document.getElementById("card2").style.backgroundColor='#4b5069';
-            document.getElementById("card3").style.backgroundColor='#4b5069';
-        }
-        function ready(){
-            document.getElementById("card1").style.backgroundColor='#4b5069';
-            document.getElementById("card2").style.backgroundColor='#f7c948';
-            document.getElementById("card3").style.backgroundColor='#4b5069';
-        }
-        function go(){
-            document.getElementById("card3").style.backgroundColor='#199473';
-            document.getElementById("card1").style.backgroundColor='#4b5069';
-            document.getElementById("card2").style.backgroundColor='#4b5069';
-        }
-    </script>
+    <script src="trafficlights.js"></script>
 </body>
 </html>
